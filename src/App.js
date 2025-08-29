@@ -253,7 +253,7 @@ function Projects() {
   const projects = [
     {
       title: "NCAA Picks",
-      desc: "Full-stack web application that forecasts NCAA tournament outcomes using interactive data visualization and bracket algorithms. Capstone project developed under agile methodology.",
+      desc: "Full-stack web application for weekly college football predictions using virtual points, allowing fans to compete socially without gambling. Capstone project developed under agile methodology.",
       img: NCAAPicks,
       link: "https://corptoolsprojectshowcase.netlify.app/",
     },
