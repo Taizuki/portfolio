@@ -22,6 +22,7 @@ import Simon from "./assets/simon.png";
 import Cheesemice from "./assets/cheesemice.png";
 import Battle from "./assets/battle.png";
 import Agario from "./assets/agario.png";
+import Rotary from "./assets/rotary.jpg";
 
 export default function App() {
   return (
@@ -259,6 +260,12 @@ function Projects() {
       img: Sprite,
       link: "https://drive.google.com/file/d/15PdZFP_-hXPxqOsg8b4kbKqZDX7mst8m/view",
       github: "https://gitea.com/Taizukii/sprite-editor",
+    },
+    {
+      title: "Rotary MP3 Player",
+      desc: "A custom-built MP3 player that uses a rotary encoder as its primary control mechanism for navigation and playback. Designed to explore embedded systems, user interface design, and audio hardware integration.",
+      img: Rotary,
+      link: "https://drive.google.com/file/d/1uIim2QSLxf-5v9bu-DQh_9SlPdYhM7r_/view?usp=sharing",
     },
     {
       title: "Agario Server/DB",
