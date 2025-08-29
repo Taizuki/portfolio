@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.75e9c457.css",
+    "main.js": "/portfolio/static/js/main.61c436cd.js",
+    "static/media/battle.png": "/portfolio/static/media/battle.2ed03cd51e17eff2ab53.png",
+    "static/media/wristwrite.png": "/portfolio/static/media/wristwrite.07aceff17c21266aa425.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.56b82c4e6fc79bc4bbce.pdf",
+    "static/media/blackjack.png": "/portfolio/static/media/blackjack.34e481b6506e29161ac8.png",
+    "static/media/spreadsheet.png": "/portfolio/static/media/spreadsheet.324ac77258b46a5856cb.png",
+    "static/media/cheesemice.png": "/portfolio/static/media/cheesemice.a1d9ecbd49d459126c89.png",
+    "static/media/simon.png": "/portfolio/static/media/simon.cae112d6904094468eae.png",
+    "static/media/depthdash.png": "/portfolio/static/media/depthdash.c69f81d6e576a7e3c8e0.png",
+    "static/media/ncaapicks.png": "/portfolio/static/media/ncaapicks.72c90a97254e591f8e39.png",
+    "static/media/sprite.png": "/portfolio/static/media/sprite.1c769547f1580e5d5222.png",
+    "static/media/agario.png": "/portfolio/static/media/agario.6b2f38673b1f5ce88255.png",
+    "static/media/quickgrid.png": "/portfolio/static/media/quickgrid.fd13495925f53bc7a331.png",
+    "index.html": "/portfolio/index.html",
+    "main.75e9c457.css.map": "/portfolio/static/css/main.75e9c457.css.map",
+    "main.61c436cd.js.map": "/portfolio/static/js/main.61c436cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75e9c457.css",
+    "static/js/main.61c436cd.js"
+  ]
+}
