@@ -17,7 +17,7 @@ import Sprite from "./assets/sprite.png";
 import Blackjack from "./assets/blackjack.png";
 import Wristwrite from "./assets/wristwrite.png";
 import Depthdash from "./assets/depthdash.png";
-import Quickgrid from "./assets/quickgrid.png"
+import Quickgrid from "./assets/quickgrid.png";
 import Simon from "./assets/simon.png";
 import Cheesemice from "./assets/cheesemice.png";
 import Battle from "./assets/battle.png";
@@ -566,7 +566,7 @@ function Courses() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Finished Coursework
+        Related Coursework
       </motion.h2>
 
       <div className="accordion-wrapper">
