@@ -5,7 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, ChevronDown } from "lucide-react";
+import { Mail, Linkedin, ChevronDown } from "lucide-react";
 import "./index.css";
 
 import WorkIcon from "@mui/icons-material/Work";
