@@ -4,6 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, Linkedin, ChevronDown } from "lucide-react";
 import "./index.css";
@@ -25,6 +26,18 @@ import Agario from "./assets/agario.png";
 import Rotary from "./assets/rotary.jpg";
 
 export default function App() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="wrapper">
       <Navbar />
