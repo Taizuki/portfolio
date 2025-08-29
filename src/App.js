@@ -728,6 +728,7 @@ function ScrollToTopButton() {
   };
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    window.history.replaceState(null, "", "https://ryantatnguyen.netlify.app");
   };
   useState(() => {
     window.addEventListener("scroll", toggleVisibility);
