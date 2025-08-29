@@ -66,7 +66,8 @@ function Header() {
         className="headerContent"
       >
         <h1 className="title">
-          Hi, I'm <span className="highlight">Ryan Nguyen</span>
+          <p>Hi, I'm</p>
+          <span className="highlight">Ryan Nguyen</span>
         </h1>
         <p className="subtitle">Web Developer • Software Engineer</p>
         <p className="about">
