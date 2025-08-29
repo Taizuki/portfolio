@@ -237,7 +237,7 @@ function Skills() {
             className="skill-card"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: i * 0.1 }}
+            transition={{ delay: i * 0.025 }}
             viewport={{ once: true }}
           >
             <img src={skill.image} alt={skill.title} className="skillImg" />
@@ -352,7 +352,7 @@ function Projects() {
             className="project-card"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.2 }}
+            transition={{ delay: i * 0.025 }}
             viewport={{ once: true }}
           >
             <div className="project-image-container">
@@ -576,32 +576,39 @@ function Courses() {
 
   return (
     <section id="courses" className="section">
-      {/* Section title for Coursework */}
-      <motion.h2
-        className="sectionTitle"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        Related Coursework
-      </motion.h2>
+  {/* Section title for Coursework */}
+  <motion.h2
+    className="sectionTitle"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+  >
+    Related Coursework
+  </motion.h2>
 
-      <div className="accordion-wrapper">
-        <div className="accordion">
-          {data.map((item, i) => (
-            <div className="course" key={i}>
-              <div className="course-title" onClick={() => toggle(i)}>
-                <h3>{item.course}</h3>
-                <span>{selected === i ? "-" : "+"}</span>
-              </div>
-              <div className={selected === i ? "content show" : "content"}>
-                {item.description}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+  <div className="accordion-wrapper">
+    <div className="accordion">
+      {data.map((item, i) => (
+        <motion.div
+          className="course"
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.025 }}
+          viewport={{ once: true }}
+        >
+          <div className="course-title" onClick={() => toggle(i)}>
+            <h3>{item.course}</h3>
+            <span>{selected === i ? "-" : "+"}</span>
+          </div>
+          <div className={selected === i ? "content show" : "content"}>
+            {item.description}
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
   );
 }
 
@@ -728,7 +735,7 @@ function ScrollToTopButton() {
   };
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    window.history.replaceState(null, "", "https://ryantatnguyen.netlify.app");
+    window.history.replaceState(null, "", "/");
   };
   useState(() => {
     window.addEventListener("scroll", toggleVisibility);
