@@ -34,6 +34,7 @@ export default function App() {
       <About />
       <Courses />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
@@ -700,5 +701,34 @@ function Footer() {
         Thanks for visiting ✨
       </motion.p>
     </footer>
+  );
+}
+
+function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  useState(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+  return (
+    <motion.button
+      className="scroll-to-top"
+      onClick={scrollToTop}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: visible ? 1 : 0, scale: visible ? 1 : 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      ↑
+    </motion.button>
   );
 }
