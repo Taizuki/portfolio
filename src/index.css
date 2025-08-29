@@ -69,17 +69,19 @@ body {
 
 /* Header */
 .header {
-  margin-bottom: 8rem;
-  min-height: 65;
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .headerContent {
-  text-align: center;
   max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem 0;
+  width: 100%;
+  padding-bottom: 10rem;
 }
 
 .title {
@@ -390,10 +392,4 @@ body {
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
   padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .title {
-    font-size: 12px;
-  }
 }
