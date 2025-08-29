@@ -195,18 +195,13 @@ function Skills() {
         "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
     },
     {
-      title: "Excel",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
-    },
-    {
       title: "Docker",
       image: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
     },
     {
-      title: "CI/CD",
+      title: "Excel",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/6/66/Event_Platform_value_stream_-_desired_CI-CD.png",
+        "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
     },
   ];
 
@@ -566,7 +561,7 @@ function Courses() {
   };
 
   return (
-    <section id="courses">
+    <section id="courses" className="section">
       {/* Section title for Coursework */}
       <motion.h2
         className="sectionTitle"
