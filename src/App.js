@@ -83,7 +83,7 @@ function Header() {
           <p>Hi, I'm</p>
           <span className="highlight">Ryan Nguyen</span>
         </h1>
-        <p className="subtitle">Web Developer • Software Engineer</p>
+        <p className="subtitle">Full-Stack Developer • Computer Science Graduate</p>
         <p className="about">
           Software developer passionate about designing and building innovative
           solutions
