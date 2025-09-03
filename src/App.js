@@ -276,6 +276,7 @@ function Projects() {
       desc: "A custom-built MP3 player that uses a rotary encoder as its primary control mechanism for navigation and playback. Designed to explore embedded systems, user interface design, and audio hardware integration.",
       img: Rotary,
       link: "https://drive.google.com/file/d/1uIim2QSLxf-5v9bu-DQh_9SlPdYhM7r_/view?usp=sharing",
+      github: "https://github.com/Taizuki/rotary-player",
     },
     {
       title: "Agario Server/DB",
