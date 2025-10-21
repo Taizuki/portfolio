@@ -286,7 +286,7 @@ function Projects() {
       github: "https://gitea.com/Taizukii/agario-server-db",
     },
     {
-      title: "Blackjack",
+      title: "Card Noir",
       desc: "Interactive casino game simulation with strategic card logic and a challenging AI opponent. Developed using modern game architecture patterns.",
       img: Blackjack,
       link: "https://drive.google.com/file/d/1h71lmXXFrZ-EqAc9qBzV-IOWhshxnv-o/view",
